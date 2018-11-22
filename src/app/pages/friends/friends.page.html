@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Friends</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div class="centered">
+      <ion-segment (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="friends">
+            Friends Drinking
+          </ion-segment-button>
+          <ion-segment-button value="enemies">
+            All Friends
+          </ion-segment-button>
+        </ion-segment>
+    <ion-list>
+      <ion-item-divider>Friends Drinking</ion-item-divider>
+      <ion-item>
+        <ion-label>
+          <h2>Adiontae Gerron</h2>
+          <p>drinking for the past 10 mins</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
